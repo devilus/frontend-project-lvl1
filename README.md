@@ -6,3 +6,6 @@
 
 ### Github Actions status:
 [![Linter Status](https://github.com/devilus/frontend-project-lvl1/workflows/lint/badge.svg)](https://github.com/devilus/frontend-project-lvl1/actions)
+
+### Asciinema brain-even video
+https://asciinema.org/a/xdRkt2Xr8Skl7pT7moXdDEzkN
