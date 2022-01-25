@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-import readFileSync from 'readline-sync';
+import readLineSync from 'readline-sync';
 
 const getRandomNum = () => Math.floor(Math.random() * 1000);
 const isEvenNum = (num) => num % 2 === 0;
-const userName = readFileSync.question('May I have your name? ').trim();
+const userName = readLineSync.question('May I have your name? ').trim();
 const maxLevel = 3;
 let level = 0;
 
@@ -16,7 +16,7 @@ do {
 
   console.log(`Question: ${randomNum}`);
 
-  const userAnswer = readFileSync.question('Your answer: ').trim();
+  const userAnswer = readLineSync.question('Your answer: ').trim();
 
   if (userAnswer === correctAnswer) {
     console.log('Correct!');
