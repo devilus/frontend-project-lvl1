@@ -26,7 +26,7 @@ export default (gameData, startMessage = '') => {
   showMessage(startMessage);
 
   let level = 0;
-  for (; level < gameData.length; level += 1) {
+  for (; level < maxLevel; level += 1) {
     const { question, answer } = gameData[level];
 
     showMessage(`Question: ${question}`);
