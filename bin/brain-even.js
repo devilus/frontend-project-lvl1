@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 import runGame from '../index.js';
-import { randomNum } from '../src/lib.js';
-import { isEvenNum } from '../src/lib.js';
-import dataConstructor from '../src/dataConstructor.js';
+import randomNum from '../src/modules/randomNum.js';
+import dataConstructor from '../src/modules/dataConstructor.js';
+
+const isEvenNum = (num) => num % 2 === 0;
 
 const qaBuilder = () => {
   const question = randomNum();

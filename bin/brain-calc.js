@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 import _ from 'lodash';
 import runGame from '../index.js';
-import { randomNum } from '../src/lib.js';
-import dataConstructor from '../src/dataConstructor.js';
+import randomNum from '../src/modules/randomNum.js';
+import dataConstructor from '../src/modules/dataConstructor.js';
 
 const calculate = (operation) => {
   const [operand1, operator, operand2] = operation.split(' ');

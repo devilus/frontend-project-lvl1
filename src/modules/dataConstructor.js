@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import { maxLevel } from '../index.js';
+import { maxLevel } from '../../index.js';
 
 export default (qaBuilder) => {
   if (!_.isFunction(qaBuilder)) {
