@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 import _ from 'lodash';
 import runGame from '../index.js';
-import { randomNum, gameDataBuild } from '../src/lib.js';
+import { randomNum } from '../src/lib.js';
+import dataConstructor from '../src/dataConstructor.js';
 
 const calculate = (operation) => {
   const [operand1, operator, operand2] = operation.split(' ');
@@ -26,7 +27,7 @@ const qaBuilder = () => {
   return { question, answer };
 };
 
-const gameData = gameDataBuild(qaBuilder);
+const gameData = dataConstructor(qaBuilder);
 const startMessage = 'What is the result of the expression?';
 
 runGame(gameData, startMessage);
