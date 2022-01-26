@@ -17,3 +17,7 @@ https://asciinema.org/a/xdRkt2Xr8Skl7pT7moXdDEzkN
 ### Asciinema brain-calc video
 
 https://asciinema.org/a/fejO7BgkxiOwc5a9Yi4rFuizy
+
+### Asciinema brain-progression video
+
+https://asciinema.org/a/Fkkc7TMXniptRzz92IzUH1Mh6
