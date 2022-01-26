@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import runGame, { maxLevel, randomNum } from '../index.js';
-
-const isEvenNum = (num) => num % 2 === 0;
+import runGame, { maxLevel } from '../index.js';
+import { randomNum } from '../src/lib.js';
+import { isEvenNum } from '../src/lib.js';
 
 const qa = () => {
   const question = randomNum();
@@ -11,8 +11,11 @@ const qa = () => {
 };
 
 const gameData = [];
+const startMessage =
+  'Answer "yes" if the number is even, otherwise answer "no".';
+
 for (let i = 0; i < maxLevel; i += 1) {
   gameData.push(qa());
 }
 
-runGame(gameData);
+runGame(gameData, startMessage);
