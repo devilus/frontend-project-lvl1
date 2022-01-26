@@ -3,8 +3,7 @@ import readLineSync from 'readline-sync';
 
 export const maxLevel = 3;
 
-const isCorrectAnswer = (userAnswer, correctAnswer) =>
-  userAnswer === _.toString(correctAnswer);
+const isCorrectAnswer = (userAnswer, correctAnswer) => userAnswer === _.toString(correctAnswer);
 
 const inputRequest = (title = '') => _.trim(readLineSync.question(`${title} `));
 
@@ -33,9 +32,7 @@ export default (gameData, startMessage = '') => {
     const userAnswer = inputRequest('Your answer:');
 
     if (!isCorrectAnswer(userAnswer, answer)) {
-      showMessage(
-        `'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`
-      );
+      showMessage(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
       break;
     }
 

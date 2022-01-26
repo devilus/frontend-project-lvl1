@@ -13,7 +13,6 @@ const qaBuilder = () => {
 };
 
 const gameData = dataConstructor(qaBuilder);
-const startMessage =
-  'Answer "yes" if the number is even, otherwise answer "no".';
+const startMessage = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 runGame(gameData, startMessage);

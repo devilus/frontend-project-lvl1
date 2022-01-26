@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import _ from 'lodash';
 import runGame from '../index.js';
-import randomNum from '../src/modules/randomNum.js'
+import randomNum from '../src/modules/randomNum.js';
 import dataConstructor from '../src/modules/dataConstructor.js';
 
 const generateProgression = () => {
@@ -22,10 +22,7 @@ const generateProgression = () => {
 const qaBuilder = () => {
   const progression = generateProgression();
   const hiddenValue = _.sample(progression);
-  const hiddenValueIndex = _.findIndex(
-    progression,
-    (idx) => idx === hiddenValue
-  );
+  const hiddenValueIndex = _.findIndex(progression, (idx) => idx === hiddenValue);
 
   progression[hiddenValueIndex] = '..';
   const question = progression.join(' ');

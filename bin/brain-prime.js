@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import _ from 'lodash';
 import runGame from '../index.js';
 import randomNum from '../src/modules/randomNum.js';
 import dataConstructor from '../src/modules/dataConstructor.js';
@@ -22,7 +21,6 @@ const qaBuilder = () => {
 };
 
 const gameData = dataConstructor(qaBuilder);
-const startMessage =
-  'Answer "yes" if given number is prime. Otherwise answer "no".';
+const startMessage = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 runGame(gameData, startMessage);
