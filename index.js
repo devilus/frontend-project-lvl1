@@ -33,6 +33,9 @@ export default (gameData, startMessage = '') => {
     const userAnswer = inputRequest('Your answer:');
 
     if (!isCorrectAnswer(userAnswer, answer)) {
+      showMessage(
+        `'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`
+      );
       break;
     }
 
